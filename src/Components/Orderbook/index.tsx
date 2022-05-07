@@ -9,6 +9,7 @@ import TableHead from "./TableHead";
 import "./style.css"
 import { formatNumber } from "../../helpers";
 import DataRow from "./DataRow";
+import Loader from "../Loader";
 
 const WSS_URL: string = "wss://www.cryptofacilities.com/ws/v1";
 
@@ -131,7 +132,7 @@ const OrderBook: FunctionComponent<OrderBookProps> = ({windowWidth, productId}) 
     return(
         <div> 
             {bids.length && asks.length ?
-            (<div className="whole-book">
+            (<><div className="whole-book">
                 <div className="green-table-container">
                     <div className="table-green"><TableHead  windowWidth={windowWidth}/></div>
                     <div className="table-green">{priceLevels(bids, OrderTypes.BIDS)}</div> 
@@ -140,13 +141,13 @@ const OrderBook: FunctionComponent<OrderBookProps> = ({windowWidth, productId}) 
                 <div className="red-table-container">
                     <div className="table-red"><TableHead windowWidth={windowWidth} isReverse={true}/></div>
                     <div className="table-red">{priceLevels(asks, OrderTypes.ASKS)}</div>
-                </div>
-                
-            </div>)
-            : <>Loading</>}
+                </div> 
+            </div>
             <div className="killswitch"><button className="kill" onClick={toggleFeedKill} style={{
-                    "backgroundColor": isFeedKilled ? "grey" : "red"
-                }}>{isFeedKilled ? "Renew Feed" : "Kill Feed"}</button></div>
+                "backgroundColor": isFeedKilled ? "grey" : "red"
+            }}>{isFeedKilled ? "Renew Feed" : "Kill Feed"}</button></div></>)
+            : <Loader/>}
+            
         </div>
     )
 

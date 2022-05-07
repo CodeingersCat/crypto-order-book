@@ -1,0 +1,23 @@
+.loader-container{
+    min-width: 90vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.loader{
+    margin: 0 0 2em;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+svg path{
+    enable-background:new 0 0 50 50;
+    fill: red
+}

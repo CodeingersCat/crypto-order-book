@@ -5,6 +5,7 @@ import OrderBook from './Components/Orderbook';
 import Footer from './Components/Footer';
 import { clearOrdersState } from './Components/Orderbook/orderbookSlice';
 import { useAppDispatch } from './hooks';
+import Loader from './Components/Loader';
 
 export const ProductIds = {
   XBTUSD: 'PI_XBTUSD',
@@ -87,12 +88,12 @@ function App() {
 
   return (
     <>
-    {isPageVisible ? <div className="container-whole"> 
+    {isPageVisible  ? <div className="container-whole"> 
       <Header windowWidth={windowWidth} options={options[productId]} />
       <OrderBook windowWidth={windowWidth} productId={ProductIds.XBTUSD}/> 
       <Footer toggleFeedChange={toggleFeedChange} market={productId}/>
     </div> 
-    : "Loading"}
+    : <Loader/>}
     </>
   );
 }
