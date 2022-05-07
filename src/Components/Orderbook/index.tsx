@@ -138,7 +138,7 @@ const OrderBook: FunctionComponent<OrderBookProps> = ({windowWidth, productId}) 
                 </div>
                 {windowWidth < MOBILE_WIDTH ? <Spread/> : ""}
                 <div className="red-table-container">
-                    <div className="table-red"><TableHead windowWidth={windowWidth}/></div>
+                    <div className="table-red"><TableHead windowWidth={windowWidth} isReverse={true}/></div>
                     <div className="table-red">{priceLevels(asks, OrderTypes.ASKS)}</div>
                 </div>
                 

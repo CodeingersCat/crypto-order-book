@@ -1,7 +1,12 @@
 .header-row-red, .header-row-green{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
+}
+
+span{
+    width: 100%;
+    text-align: center;
 }
 
 .color-red, .color-green{

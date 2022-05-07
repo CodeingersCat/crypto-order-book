@@ -14,7 +14,7 @@ const Header: FunctionComponent<HeaderProps> = ({options, windowWidth}) => {
     <div className='header-container'>
       <h3>Crypto Watch</h3>
       {windowWidth>MOBILE_WIDTH ?  <Spread/> : ""}
-      <GroupingSelectBox options={options}/>
+      <GroupingSelectBox options={options} />
     </div>
   );
 };

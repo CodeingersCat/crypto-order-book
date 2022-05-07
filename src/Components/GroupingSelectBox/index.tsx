@@ -5,7 +5,7 @@ import { selectGrouping, setGrouping } from "../Orderbook/orderbookSlice";
 import "./style.css"
 
 interface GroupingSelectBoxProps {
-    options: number[]
+    options: number[];
 }
 
 

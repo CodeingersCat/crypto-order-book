@@ -20,7 +20,7 @@ const DataRow: FunctionComponent<DataProps>  = ({total, size, price, isReverse=f
             <div className="color-red" style={{
                 "width": `${depth}%`
             }}/>
-            <span style={{"color": "rgb(156, 20, 20)"}}>{price}</span>
+            <span style={{"color": "rgb(226, 215, 61)"}}>{price}</span>
             <span>{size}</span>
             <span>{total}</span>
             </div>
@@ -40,7 +40,7 @@ const DataRow: FunctionComponent<DataProps>  = ({total, size, price, isReverse=f
             <div className="color-red" style={{
                 "width": `${depth}%`
             }}/>
-            <span style={{"color": "rgb(156, 20, 20)"}}>{price}</span>
+            <span style={{"color": "rgb(226, 215, 61)"}}>{price}</span>
             <span>{size}</span>
             <span>{total}</span>
             </div>
