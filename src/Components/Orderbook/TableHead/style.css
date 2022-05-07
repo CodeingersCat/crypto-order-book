@@ -1,0 +1,32 @@
+.header-row-red, .header-row-green{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.color-red, .color-green{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+@media(max-width: 490px){
+    .color-green{
+        left: 0
+    }
+}
+
+.color-red{
+    left: 0;
+    background-color: rgb(183, 87, 87);
+    /* -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg); */
+    transform: scaleX(-1);
+}
+
+.color-green{
+    background-color: rgb(52, 116, 52);
+}

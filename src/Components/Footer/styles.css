@@ -1,0 +1,21 @@
+.footer-container{
+    bottom: 0;
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.toggle{
+    width: 130px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+}
+
+.buttons{
+    padding-bottom: 10px;
+}

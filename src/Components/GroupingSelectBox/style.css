@@ -1,0 +1,28 @@
+h3{
+    font-size: 2.3em;
+}
+
+.header-container{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px dashed gray;
+}
+
+@media(max-width: 490px) {
+    .header-container{
+        flex-direction: column;
+        padding: 0px 0px 10px 0px;
+    }
+}
+
+.option{
+    color: black
+}
+
+.select-option{
+    color: black;
+    font-size: 1em;
+    border: 2px solid gray;
+}
